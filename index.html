@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link type ="text/css" rel= "stylesheet" href = "stylesheet.css">
+<link type ="text/css" rel= "stylesheet" href = "jqueryui/jquery-ui.css">
+<link type ="text/css" rel= "stylesheet" href = "jqueryui/jquery-ui.structure.css">
+<link type ="text/css" rel= "stylesheet" href = "jqueryui/jquery-ui.theme.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class ="main"> 
+<a id="topbtn"><span class="glyphicon glyphicon-menu-up"></span></a>		
+	<div id= "background-image">
+		<div id= "menubar">
+			<nav class= "menu">
+			<ul>
+				<li><a href="#background-image">HOME</a></li>
+				<li><a href="#aboutme">ABOUT ME</a></li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+			</nav>
+			<div id="hamburger-menu"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
+			
+		</div>
+		
+		<div id = "background-text" hidden>
+			<h2>I'm Jean Raymond, a Software Developer who is ready to help you </h2>
+			<p id="dynamic-background-message"></p>
+		</div>
+		<div id="buttons">
+			<button id="skills" type="submit" onclick="">MY SKILLS</button>
+			<button id="resume" type="submit" onclick="window.open('resume.pdf')">RESUME</button>
+		</div>
+	</div>
+
+	<div id="aboutme">
+		<div id="left-aboutme">
+			<img src= "jeanraymond2.jpeg">
+			<p id="name">JEAN RAYMOND DAHER</p>
+			<p id="description">I have always been passionate about software development. 
+			In my bachelors, I got some hands on experience programming with different languages. 
+			During my masters, I refined my development skills and became more professional in organizing and communicating my ideas. 
+			Today, I work as an android mobile developer in Java the language that I first learned and that I have always used. 
+			I am always excited to learn new technologies and eager to pick up new challenges. Working at Softconcept, 
+			I am learning to prioritize solutions that are user friendly, well designed as well as efficient.</p>
+		</div>
+		<div id="right-aboutme">
+			<h3>A few facts about me</h3>
+			<div id ="hobbies">
+			<p>I've been living in montreal, Canada since 3 years ago. I studied master of Software Engineering in Concodrai university</br>
+			I love working out, one of my biggest hobbies is training. My favorite sports are calisthenics, bodybuilding,
+			biking, soccer and ping pong. </br>
+			On my free time I read books, here are some of the most interesting books that I've read: </br>
+				 &nbsp &nbsp &nbsp &nbsp-Walter Isaacson, "Steve Jobs" </br>
+				 &nbsp &nbsp &nbsp &nbsp-David Deida, "The-Way-of-the-Superior-Man" </br>
+				 &nbsp &nbsp &nbsp &nbsp-Joseph Murphy, "The power of your subconscious mind"
+			I'm crazy about playing video games specially Heroes of the storm , Dota 2, Counter Strike and Diablo 3 </p>
+			</div>
+		</div>
+	</div>
+	<div id="slogan">
+		<h2 id="test"> </h2>
+		<p id="dynamic-text"></p>
+	</div>
+	<div id="projects-wrapper">
+	<div id= "portfolio">		
+		<div id="publication">
+			<div id="publication-wrapper">
+			<h2>Publication</h2>
+			<h3>Association Rule Mining on Five Years of Motor Vehicle Crashes paper</h3>
+			<p>Research paper on data mining of motor vehicles crashes in Newyork Finger 
+			Lakes Region Data Pre-processing, integration and running some scripts to 
+			clean and normalize the data Rule Association Data Mining technique, along 
+			with statistical analysis 37000 crashes are studied and results for 
+			improving road safety are provided Tools Used: RapidMiner, Rstudio,
+			Weka, Java, Microsoft Excel</p>
+			</div>
+		</div>
+		<div id="projects">
+		<button id="projectbtn" type="submit">VIEW MY PROJECTS</button>
+		<div class = "slideshow-container" onmouseout= "startAutomaticSlideShow()" onmouseover= "stopAutomaticSliding()">
+			<div class= "slides">
+				<img src= "cinenow.jpg">
+				<button type="submit">VIEW PROJECT</button>
+				<P class ="title">CINENOW</P>
+				<p class="description">"An android application to connect users in order to enable them to go to the cinema together
+				</p>
+			</div>
+			<div class= "slides">
+				<img src= "pixpocket.jpg">
+				<button type="submit">VIEW PROJECT</button>
+				<P class="title">PIXPOCKET</P>
+				<p class="description">An android application which provides users a new quick and fun way to share photos without the need for a social media account	<br>
+				</p>
+			</div>
+			<div class= "slides">
+				<img src="healthgate-icon.png">
+				<button src="www.google.com" type="submit">VIEW PROJECT</button>
+				<P class="title">HEALTHGATE WEBSITE</P>
+				<p class="description">A responsive design, and a single page load website for healthgates company
+				</p>
+			</div>
+			
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div id="dot-wrapper">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+	</div>
+		</div>
+	</div>
+	</div>
+	<div id="contact">
+		<div id="contact-left">
+			<div id= "contact-wrapper">
+				<h2>Let's get in touch</h2>
+				<p>Please feel free to contact me if you have any comments about the services I provide</p>
+				<h3>Contact Information</h3>
+				<p>#1406, 2250 Guy </br>
+					Montreal, Quebec, Canada</br>
+					(438)4841992</br>
+					jeanraymond.daher@live.com</br>
+				</p>
+				<div id= "social-media">
+					<a href="https://www.facebook.com/public/Jean-Raymond-Daher" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/jrdtheace" class="fa fa-twitter"></a>
+					<a href="https://ca.linkedin.com/in/jean-raymond-daher-42988b7b" class="fa fa-linkedin"></a>
+					<a href="https://www.instagram.com/jeanraymonddaher/" class="fa fa-instagram"></a>
+				</div>
+			</div>
+		</div>
+		<div id="contact-right">
+			<form action="" method="post" onsubmit= " return validateForm()">
+				<label for="contact-name">Name</label>
+				<input type="text" id="contact-name" class="field" name="name" onkeyup="emptyField(0)">
+				<span class="error"></span>
+				<label for="contact-email">Email Address</label>
+				<input type="text" id="contact-email" class="field" name="email" onkeyup="emptyField(1)">
+				<span class="error"></span>
+				<label for="contact-subject">Subject</label>
+				<input type="text" id="contact-subject" class="field" name="subject" onkeyup="emptyField(2)">
+				<span class="error"></span>
+				<label for="contact-message">Your Message</label>
+				<textarea id="contact-message" class="field" name="message" onkeyup="emptyField(3)"></textarea>
+				<span class="error"></span>
+				<input type="submit" value= "Send">
+			</form>
+		</div>
+	</div>
+	<footer>
+	<p>© 2017 Sarvenaz Khaksarfard. All rights reserved.</p>
+	<div id= "social-media">
+		<a href="https://www.facebook.com/public/Jean-Raymond-Daher" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/jrdtheace" class="fa fa-twitter"></a>
+		<a href="https://ca.linkedin.com/in/jean-raymond-daher-42988b7b" class="fa fa-linkedin"></a>
+		<a href="https://www.instagram.com/jeanraymonddaher/" class="fa fa-instagram"></a>
+	</div>
+</footer>
+</div>
+	
+<script src = "jquery-3.2.1.js"></script>
+<script src = "jqueryui/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src = "javascript.js"></script>
+
+
+
+<script>
+	
+</script>
+
+</body>
+</html>
